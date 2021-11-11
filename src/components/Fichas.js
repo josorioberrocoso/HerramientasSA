@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactJson from 'react-json-view';
 import Listado from './Listado';
 
 const Fichas = ({ fichas = [] }) => {
@@ -15,7 +14,7 @@ const Fichas = ({ fichas = [] }) => {
                 fichas.map((item, index) => (
                     <div key={index} className="col-lg-4">
                         <div className="card text-white bg-info mb-5" >
-                            <img className="img-fluid" src={item.image} />
+                            <img className="img-fluid" src={item.image} alt="" />
                             <div class="card-img-overlay">
                                 <p className="text-center">{item.name}</p>
                             </div>
